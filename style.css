@@ -1,0 +1,141 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    transition: all 200ms;
+}
+
+:root {
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    padding: 1.25rem;
+    font-size: 18px;
+    background-color: var(--Very-dark-blue-main-BG);
+    font-family: 'Outfit', sans-serif;
+    color: var(--White);
+}
+
+img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.nft{
+    position: relative;
+}
+
+p{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.card {
+    padding: 1.25rem;
+    border-radius: 15px;
+    background-color: var(--Very-dark-blue-card-BG);
+    position: relative;
+}
+
+.nft-name{
+    padding-top: 1rem;
+    padding-bottom: 0;    
+    color: var(--White);
+}
+
+.about{
+    padding: 1rem 0;
+    color: var(--Soft-blue);
+    margin: 1 0.5rem 1rem 0;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--Very-dark-blue-line);
+}
+
+.price{
+    display: flex;
+    gap: 0.5rem;
+    color: var(--Cyan);
+    justify-content: center;
+    align-items: center;
+}
+
+.time{
+    display: flex;
+    gap: 0.5rem;
+    color: var(--Soft-blue);
+    justify-content: center;
+    align-items: center;
+}
+
+.id {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    padding:1rem 0;
+}
+
+.id img{
+    width: 3.5rem;
+    border: 2px solid var(--White);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+span{
+    color: white;
+}
+
+.creator {
+    color: var(--Soft-blue);
+}
+
+.name:hover,.nft-name:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.view {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: calc(100% - 4px);
+    background-color:hsl(178, 100%, 50%,60%);
+    border-radius: 15px;
+    padding: auto;
+    opacity: 0;
+}
+
+.view svg{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.view:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media (min-width: 500px){
+
+    .card{
+        width: 450px;
+        margin: 0 auto;
+    }
+  }
